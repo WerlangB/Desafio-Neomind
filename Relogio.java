@@ -8,18 +8,18 @@ import java.util.GregorianCalendar;
 public class Relogio {
     
     public long retornaAnguloRelogio(GregorianCalendar horario){
-        int hora = horario.get(Calendar.HOUR_OF_DAY);
-        int min = horario.get(Calendar.MINUTE);
-        int ponteiroHora = 0;
-        int ponteiroMin = 0;
-        long angulo = 0;
+        int hora = horario.get(Calendar.HOUR_OF_DAY);   // separa a hora do resto das informações do GregorianCalendar
+        int min = horario.get(Calendar.MINUTE);         // separa o minuto do resto das informações do GregorianCalendar
+        int ponteiroHora = 0;   // inicialização da variável do ponteiro que representa a hora
+        int ponteiroMin = 0;    // inicialização da variável do ponteiro que representa o minuto
+        long angulo = 0;        // inicialização da variável do angulo
         for(int x = 0; x < hora; x++){
-            ponteiroHora = ponteiroHora + 30; // 30 pra cada hora
+            ponteiroHora = ponteiroHora + 30; // soma 30 pra cada hora
         }
         for(int x = 0; x < min; x++){
-            ponteiroMin = ponteiroMin + 6; // 6 pra cada minuto
+            ponteiroMin = ponteiroMin + 6; // soma 6 pra cada minuto
         }
-        if(ponteiroHora > ponteiroMin){
+        if(ponteiroHora > ponteiroMin){         // subrai o menor do maior para pegar a diferença entre os ponteiros
             angulo = ponteiroHora - ponteiroMin;
         }else if(ponteiroHora < ponteiroMin){
             angulo = ponteiroMin - ponteiroHora;
