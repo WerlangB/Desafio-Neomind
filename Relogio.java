@@ -3,7 +3,7 @@ import java.util.GregorianCalendar;
 
 /**
  *
- * @author berna
+ * @author Bernardo Werlang
  */
 public class Relogio {
     
