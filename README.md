@@ -29,3 +29,7 @@ public long retornaAnguloRelogio(GregorianCalendar horario);
 # Dúvidas:
 
 Unica duvida foi em relação ao pedido de considerar 45 no angulo das 00:15h sendo que o correto seria um angulo de 90 graus. Considerando o pedido, o programa mostra angulo de 45 gaus quando verifica o horario 00:15h, mesmo não sendo o angulo correto.
+
+# Lógica utilizada:
+
+Comecei separando o relógio em 360 partes, dai cheguei a conclusão que a cada hora o ponteiro da hora "andava" 30 dessas partes e o ponteiro dos minutos "andava" 6 partes por minuto. Diante disso eu criei o algoritimo pedindo a hora e o minuto desejado, verificando e passando esses dados para um objeto da classe GregorianCalendar que era pedido como parametro do método retornaAnguloRelogio. Na classe do relógio eu apenas criei o metodo de pegar o angulo usando os dados de hora e minuto, informados anteriormente, verificando qual ponteiro tinha "andado mais" baseado na hora e minuto informados e subtraindo o menor do maior para obter a diferença entre os ponteiros, assim retornando o angulo e exibindo ele logo em seguida.
