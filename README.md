@@ -28,4 +28,4 @@ public long retornaAnguloRelogio(GregorianCalendar horario);
 
 # Dúvidas:
 
-Unica duvida foi em relação ao pedido de considerar 45 no angulo das 00:15h sendo que o correto seria um angulo de 90 graus. Considerando o pedido, o programa mostra angulo de 45 gaus quando verifica o horario 00:15h, mesmo estando errado.
+Unica duvida foi em relação ao pedido de considerar 45 no angulo das 00:15h sendo que o correto seria um angulo de 90 graus. Considerando o pedido, o programa mostra angulo de 45 gaus quando verifica o horario 00:15h, mesmo não sendo o angulo correto.
